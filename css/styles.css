@@ -1,0 +1,435 @@
+:root {
+  --primary-text-color: #212121;
+  --first-text-color: #757575;
+  --secondary-text-color: #FFFFFF;
+  --hover-color: #2196f3;
+  --button-hover-color: #188CE8;
+  --color-logo: #000000;
+  --primary-bgn-color: #FFFFFF;
+  --secondary-bgn-color: #2F303A;
+  --third-bgn-color: #F5F4FA;
+  --primary-font: "Roboto", sans-serif;
+  --logo-font-family: "Raleway", sans-serif;
+  --main-font-size: 14px;
+  --second-font-size: 16px;
+  --main-line-height: 1.14;
+  --title-line-height: 2;
+  --text-line-height: 1.9;
+  --container-width: 1200px;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-bgn-color);
+  color: var(--primary-text-color);
+}
+
+/* Utilites */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.list-item {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* -------------- HEADER---------- */
+.header {
+  display: flex;
+  align-content: center;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-logo {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  font-family: var(--logo-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: var(--main-line-height);
+  letter-spacing: 0.03em;
+  color: var(--color-logo);
+}
+
+.logo-aspect {
+  color: var(--hover-color);
+}
+
+.header-nav,
+.header-contact,
+.contact-list,
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  gap: 50px;
+}
+
+.header-container {
+  display: flex;
+}
+
+.contact-list {
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  gap: 50px;
+}
+
+
+/* doing at header and footer */
+.header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.current {
+  color: var(--hover-color);
+}
+
+.footer-contact,
+.header-contact {
+  font-weight: 500;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: 0.02em;
+  color: var(--first-text-color);
+}
+
+/* --------------FOOTER-------------- */
+.footer-logo {
+  display: flex;
+  min-width: 145px;
+  width: 250px;
+  font-family: var(--logo-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  padding-top: 60px;
+  padding-right: 100px;
+  margin-bottom: 20px;
+  outline: tomato;
+}
+
+.footer-adress {
+  display: inline-block;
+  font-style: normal;
+  font-size: var(--main-font-size);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.footer-contact {
+  display: flex;
+  text-decoration: none;
+  font-style: normal;
+  font-size: var(--main-font-size);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.adress {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+.adress-list {
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+}
+
+.secondary:hover,
+.secondary:focus,
+.portfolio-title:hover,
+.portfolio-title:focus,
+.portfolio-text:hover,
+.portfolio-text:focus {
+  color: var(--hover-color);
+}
+
+.hero,
+.footer {
+  background-color: var(--secondary-bgn-color);
+}
+
+/* ------------HERO---------------- */
+.hero-title {
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 696px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
+.hero-button {
+  max-width: 1200px;
+
+  color: var(--secondary-text-color);
+  background: var(--hover-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: var(--second-font-size);
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px 10px 32px;
+
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--secondary-text-color);
+  background: var(--button-hover-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--second-font-size);
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px 10px 32px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 200px;
+}
+
+/* ---------PREFERENCE---------- */
+.preference-list {
+  display: flex;
+  gap: 30px;
+}
+
+.preference-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.preference-text {
+  font-size: var(--main-font-size);
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
+
+/*-----------EXAMPLES-----------*/
+.examples {
+  padding-bottom: 94px;
+}
+
+.examples-title,
+.team-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: var(--main-line-height);
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/*------------ TEAM ------------*/
+.team {
+  background-color: var(--third-bgn-color);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: calc ((100% - 90px)/4);
+}
+
+.team-names {
+  font-weight: 500;
+  font-size: var(--second-font-size);
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-position {
+  font-size: var(--second-font-size);
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+  margin-bottom: 30px;
+}
+
+.item-specification {
+  text-align: center;
+  background: var(--primary-bgn-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* ================ PORTFOLIO ============== */
+
+.portfolio-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  gap: 8px;
+}
+
+.portfolio-button {
+  padding: 6px 20px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--second-font-size);
+  line-height: 1.6;
+  text-align: center;
+  background: var(--third-bgn-color);
+  color: var(--primary-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+}
+
+.portfolio-button:hover,
+.portfcontainerolio-button:focus {
+  background: var(--hover-color);
+  color: var(--secondary-text-color);
+}
+
+.portfolio-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: var(--title-line-height);
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-size: var(--second-font-size);
+  line-height: var(--text-line-height);
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+}
+
+.flex-item {
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  width: calc ((100% - 52px)/3);
+}
+
+.flex-item:nth-last-child(-n+3) {
+  margin-bottom: 0px;
+}
+
+.flex-item:nth-child(3n) {
+  margin-right: 0px;
+}
