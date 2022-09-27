@@ -19,6 +19,7 @@
   --container-width: 1200px;
   --main-icon-color: #afb1b8;
   --icon-bgn-color: rgba(255, 255, 255, 0.1);
+  --hero-background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/goit-markup-hw-04/images/hero.jpg');
 }
 
 body {
@@ -144,13 +145,14 @@ img {
 
 .header-contact {
   padding-top: 32px;
-  padding-bottom: 32px;  
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
   letter-spacing: 0.02em;
   color: var(--first-text-color);
 }
+
 .icon-telefon {
   width: 10px;
   height: 16px;
@@ -163,19 +165,12 @@ img {
 
 .icon-telefon,
 .icon-mail {
-  fill: var(--first-text-color);
+  fill: currentColor;
   margin-right: 10px;
 }
 
-.icon-telefon:hover,
-.icon-mail:hover,
-.icon-telefon:focus,
-.icon-mail:focus {
-  fill: var(--hover-color);
-}
-
 .header-contact:hover,
-.header-contact:focus {
+.header-contact:hover {
   color: var(--hover-color);
 }
 
@@ -183,10 +178,10 @@ img {
 .hero {
   padding: 200px 0px;
   margin: 0 auto;
-  width: 1600px;
-  background-color: var(--secondary-bgn-color);
-  background-image: url('/goit-markup-hw-04/images/hero.jpg');
-  background-size: contain;
+  max-width: 1600px;
+  background-color: #c4c4c4;
+  background-image: var(--hero-background);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -221,7 +216,7 @@ img {
   border-radius: 4px;
   padding: 10px 32px 10px 32px;
   border: none;
-   }
+}
 
 .hero-button:hover,
 .hero-button:focus {
@@ -316,7 +311,7 @@ img {
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .team-names {
@@ -335,6 +330,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--first-text-color);
+  margin-bottom: 16px;
 }
 
 .item-specification {
@@ -344,11 +340,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-social-container {
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
-}
+
 .social-link {
   display: flex;
   gap: 10px;
@@ -362,23 +354,20 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: var(--primary-bgn-color);
+  fill: var(--main-icon-color);
 }
 
 .icon-background-team:hover,
 .icon-background-team:focus {
   background-color: var(--hover-color);
+  fill: var(--primary-bgn-color);
 }
 
 .icon-team {
   width: 20px;
   height: 20px;
-  fill: var(--main-icon-color);
 }
 
-.icon-team:hover,
-.icon-team:focus {
-  fill: var(--primary-bgn-color);
-}
 /* --------------FOOTER-------------- */
 .footer {
   display: flex;
@@ -483,31 +472,31 @@ img {
   display: flex;
   gap: 30px;
 }
+
 .icon-client-bgn {
   display: flex;
-  padding: 16px 32px;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--main-icon-color);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-}
-.icon-client-bgn:hover,
-.icon-client-bgn:focus,
-.icon-client:hover,
-.icon-client:focus {
-  border-color: var(--hover-color);
-  fill: var(--hover-color);
-}
-.icon-client {
-  width: 106px;
-  height: 60px;
+  border: 1px solid var(--main-icon-color);
   fill: var(--main-icon-color);
 }
 
-/* ================ PORTFOLIO ============== */
+.icon-client {
+  width: 106px;
+  height: 60px;
+  color: currentColor;
+}
 
+.icon-client-bgn:hover,
+.icon-client-bgn:focus {
+  border-color: var(--hover-color);
+  fill: var(--hover-color);
+}
+
+/* ================ PORTFOLIO ============== */
 .portfolio-filters {
   display: flex;
   justify-content: center;
@@ -517,7 +506,6 @@ img {
 
 .portfolio-button {
   padding: 6px 20px;
-
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -539,7 +527,6 @@ img {
 
 .portfolio-title {
   margin-bottom: 4px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: var(--title-line-height);
@@ -567,6 +554,5 @@ img {
 }
 .flex-container > .list-item:hover,
 .flex-container > .list-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
